@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+:root{
+  --px-violet: #5C19AE;
+  --px-link-blue: #0057df;
+  --px-body-bg: #F3F2F8;
+  --px-body-color: #242b4a;
+  --px-font-sans-serif: poppins-body-strong;
+  --px-body-font-family: var(--px-font-sans-serif);
+  --px-body-font-size: 1rem;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+    background-color:white;
+
+    font-family: var(--px-body-font-family);
+    font-size: var(--px-body-font-size);
+    color: var(--px-body-color);
+    background-color: var(--px-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+
+/* Poppins Font Family Requiered. Inside the Poppins folder you will find the whole family*/
+@font-face {
+	font-family: poppins-body;
+	src: url("../assets/fonts/poppins/Poppins-Thin.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: poppins-body-strong;
+	src: url("../assets/fonts/poppins/Poppins-ExtraLight.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: poppins-regular;
+	src: url("../assets/fonts/poppins/Poppins-Regular.ttf");
+	font-display: swap;
+}
+@font-face {
+	font-family: poppins-h2;
+	src: url("../assets/fonts/poppins/Poppins-Medium.ttf");
+	font-display: swap;
+}
+
+/* Nunito Font Family Requiered. Inside the Nunito folder you will find the whole family*/
+@font-face {
+	font-family: nunito-body;
+	src: url("../assets/fonts/nunito/Nunito-Medium.ttf");
+	font-display: swap;
+}
+
+/* Typography rules. Please, note that keeps resize properties for different devices*/
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    line-height: 1.3;
+  }
+  
+  h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    font-family: poppins-regular;
+  }
+  @media (min-width: 1200px) {
+    h1, .h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  h2, .h2 {
+    font-size: calc(1.325rem + 0.9vw);
+  }
+  @media (min-width: 1200px) {
+    h2, .h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  @media (min-width: 1200px) {
+    h3, .h3 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+  @media (min-width: 1200px) {
+    h4, .h4 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  h5, .h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6, .h6 {
+    font-size: 1rem;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+  }
+/* Background*/
+.bg-primarys{
+    background-color:#E6E6F0;
+}
+.bg-v{
+    background-color: #5C19AE;
+}
+
+/* Font properties*/
+.c-w{
+    color:#f4f4f9;
+}
+.c-v{
+    color:#5C19AE;
+}
+.f-w-b{
+    font-family: poppins-regular;
+    font-weight: bold;
+}
+/* Principal Margins Behavior*/
+
+.space-between{
+    justify-content: space-between;
+}
+
+.content-wrapper{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+@media (min-width: 768px) { 
+    .content-wrapper{
+        margin-left: 48px;
+        margin-right: 48px;
+    } 
+}
+@media (min-width: 992px) { 
+    .content-wrapper{
+        margin-left: 64px;
+        margin-right: 64px;
+    } 
+}
+@media (min-width: 1200px) { 
+    .content-wrapper{
+        margin-left: 139px;
+        margin-right: 139px;
+    } 
+}
+@media (min-width: 1400px) { 
+    .content-wrapper{
+        margin-left: 300px;
+        margin-right: 300px;
+    } 
+}
+@media (min-width: 1600px) { 
+    .content-wrapper{
+        margin-left: 400px;
+        margin-right: 400px;
+    } 
+}
+
+
+/* Buttons*/
+.btn-primary-prex{
+    background-color: #5C19AE;
+    border-radius: 100rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-color: transparent;
+}
+
+.btn-primary-prex:hover{
+    background-color:#13BCA1 ;
+    border-color: transparent;
+
+}
+
+.btn-hero{
+    background-color: #f4f4f9;
+    border-radius: 100rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-color: transparent;
+
+}
+.btn-hero:hover{
+    background-color:#13BCA1 ;
+    border-color: transparent;
+
+}
+
+.btn-secondary-prex{
+    background-color: #f4f4f9;
+    border-radius: 50rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-color: transparent;
+    font-family: nunito-body;
+}
+.btn-secondary-prex:hover{
+    background-color:#13BCA1 ;
+    border-color: transparent !important;
+    border-radius: 50rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    font-family: nunito-body;
+}
+
+.button.btn-close{
+    color:#f4f4f9;
+}
+
+.section {
+    align-items: center;
+}
+
+/* Navbar*/
+.nav-link{
+    color:#242b4a;
+    font-family: poppins-body-strong;
+}
+
+.nav-item{
+    margin-left:2rem;
+  
+}
+.nav-style{
+    background-color: #f4f4f9;
+
+}
+
+.nav-mob-style{
+    color:#f4f4f9;
+    font-size: 1.4rem;
+    font-family: nunito-body;
+
+}
+.offcanvas-body{
+    font-family: nunito-body;
+}
+.center-v{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+/* Hero*/
+.bg-v{
+    background-color: #5C19AE;
+}
+.hero{
+    height: auto;
+}
+.hero-photo{
+    height:450px;
+}
+
+/* Carrusel*/
+.svg-carrusel{
+    width: 5rem;
+    height: 5rem;
+}
+.card-style{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 20px;
+    width: 270px;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+}
+.card-p{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: auto;
+}
+.carrusel-button{
+    position: absolute;
+    right: 35px;
+    top:30%;
+    z-index:0;
+}
+
+/* Footer*/
+.footer-social{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+@media (min-width: 768px) { 
+    .footer-social{
+        padding-right: 100px;
+        padding-left: 0px;
+    }
+}
+
+.footer-social-icon{
+    width: 40px;
+}
